@@ -1,14 +1,18 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "🏠", link: "/dashboard" },
+  { name: "My Work", link: "/work" },
+  { name: "About", link: "/aboutme" },
+//  { name: "Projects", link: "#projects" },
+  // { name: "Testimonios", link: "#testimonials" },
+  { name: "Experience", link: "/experience" },
+  { name: "Stack", link: "/suerte" },
+  { name: "Contact", link: "/contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+     title: "Passionate about mobile development",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -29,7 +33,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "Skilled in React Native and SwiftUI",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -49,7 +53,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "React Native JS Animation Library",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,32 +76,32 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Cross-platform Weather App",
+    des: "Real-time weather updates built with React Native and Swift.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/ui.earth.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Smart Home Control App",
+    des: "A unified smart home app built with React Native, supports both Android and iOS.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "3D Product Viewer for E-commerce",
+    des: "Interactive 3D product visualization for mobile and web using Three.js.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Health Tracker App",
+    des: "Developed a mobile health tracking app with SwiftUI for iOS.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
@@ -107,33 +111,21 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Incredible dedication and skill. Our project transformed thanks to his expertise in React Native and Swift.",
+    name: "James Miller",
+    title: "Product Manager at HealthSync",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "A skilled developer with attention to detail. He optimized our app for both platforms, increasing efficiency and user satisfaction.",
+    name: "Emma Taylor",
+    title: "Tech Lead at GreenHome Tech",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Exceeded expectations! The app was intuitive, high-quality, and seamless across Android and iOS.",
+    name: "Sophie Lee",
+    title: "CEO at Ecomfy",
   },
 ];
 
@@ -173,8 +165,8 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Mobile Developer Intern",
+    desc: "Worked on React Native apps, developing new features and optimizing performance asf   asfsadf asdf asdf asdf asdf asdfps, developing new featureanoptimizing performance asf  asfsadf asdf asdf asdf asdf asdfps, developing new features optimizing performance asf  asfsadf asdf asdf asdf asdf asdf.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -187,8 +179,8 @@ export const workExperience = [
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Freelance Mobile App Developer",
+    desc:  "Delivered various projects, including React Native and Swift-based apps for clients.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
@@ -199,7 +191,67 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+  {
+    id: 4,
+    title: "Lead Frontend Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+  {
+    id: 4,
+    title: "Lead Frontend Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
 ];
+
+export const aboutMe = [
+  {
+    id: 1,
+    title: "React Native Developer - UI Focused",
+    desc: "Desarrollo aplicaciones en React Native con un enfoque en UI, implementando animaciones y mejoras en la experiencia del usuario usando Framer Motion y otras bibliotecas de React. Manejo optimización de rendimiento y diseño intuitivo.",
+    className: "md:col-span-2",
+    thumbnail: "/ab1.png",
+  },
+  {
+    id: 2,
+    title: "Frontend Developer - React & Next.js",
+    desc: "Creo interfaces modernas y dinámicas con React y Next.js, usando librerías como chadcn para estilos y estructura. Trabajo en la integración de APIs y en la mejora de rendimiento para aplicaciones web.",
+    className: "md:col-span-2",
+    thumbnail: "/ab5.png",
+  },
+  {
+    id: 3,
+    title: "Mobile Developer - Swift & iOS SDK",
+    desc: "Desarrollo aplicaciones iOS en Swift, utilizando el SDK de Apple para aprovechar al máximo el sistema. Me especializo en la creación de interfaces de usuario atractivas y de alto rendimiento en el ecosistema iOS.",
+    className: "md:col-span-2",
+    thumbnail: "/image.gif",
+  },
+  {
+    id: 4,
+    title: "Cross-Platform Developer",
+    desc: "Con experiencia en React Native y Swift, enfoco mi desarrollo en crear experiencias de usuario consistentes y fluidas en ambas plataformas, adaptando el diseño según las necesidades de cada sistema operativo.",
+    className: "md:col-span-2",
+    thumbnail: "/ab4.png",
+  },
+  {
+    id: 5,
+    title: "Freelance Developer",
+    desc: "He entregado proyectos freelance en React Native y Swift, cubriendo desde la creación de interfaces visuales hasta la optimización de código para mejorar la velocidad y la usabilidad.",
+    className: "md:col-span-2",
+    thumbnail: "/ab6.png",
+  },
+  {
+    id: 6,
+    title: "UI-Focused Developer",
+    desc: "Todo mi desarrollo, tanto en web como en móvil, está orientado a construir interfaces que ofrezcan una experiencia visual y funcional sobresaliente, manteniendo siempre la consistencia y la calidad.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  }
+];
+
 
 export const socialMedia = [
   {
@@ -215,3 +267,4 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
