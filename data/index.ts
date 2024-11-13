@@ -4,8 +4,8 @@ export const navItems = [
   { name: "About", link: "/aboutme" },
 //  { name: "Projects", link: "#projects" },
   // { name: "Testimonios", link: "#testimonials" },
-  { name: "Experience", link: "/experience" },
-  { name: "Stack", link: "/suerte" },
+  // { name: "Experience", link: "/experience" },
+  { name: "Stack", link: "/stack" },
   { name: "Contact", link: "/contact" },
 ];
 
@@ -53,7 +53,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "React Native JS Animation Library",
+    title: "If you are looking for a frontend Dev with knowlegde in React, React Native and Swift for ios. I am the Right One!",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -76,11 +76,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Cross-platform Weather App",
-    des: "Real-time weather updates built with React Native and Swift.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Real State UI",
+    des: "Real Time quick, visible, and native App to iOS",
+    img: "/rst.webp",
+    iconLists: ["/swift.png", "/xcod.png", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/appetize.io/embed/b_ruj7hfyuvwmkfst23ler76e4uq",
   },
   {
     id: 2,
@@ -102,9 +102,9 @@ export const projects = [
     id: 4,
     title: "Health Tracker App",
     des: "Developed a mobile health tracking app with SwiftUI for iOS.",
-    img: "/p4.svg",
+    img: "/rp-4.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "/corazonnegro.vercel.app/",
   },
 ];
 
@@ -114,18 +114,21 @@ export const testimonials = [
       "Incredible dedication and skill. Our project transformed thanks to his expertise in React Native and Swift.",
     name: "James Miller",
     title: "Product Manager at HealthSync",
+    img: "/profile.svg"
   },
   {
     quote:
       "A skilled developer with attention to detail. He optimized our app for both platforms, increasing efficiency and user satisfaction.",
     name: "Emma Taylor",
     title: "Tech Lead at GreenHome Tech",
+     img: "/profile4m.png"
   },
   {
     quote:
       "Exceeded expectations! The app was intuitive, high-quality, and seamless across Android and iOS.",
-    name: "Sophie Lee",
+    name: "Daniel Martinez",
     title: "CEO at Ecomfy",
+     img: "/profile1h.png"
   },
 ];
 
@@ -165,7 +168,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Mobile Developer Intern",
+    title: "",
     desc: "Worked on React Native apps, developing new features and optimizing performance asf   asfsadf asdf asdf asdf asdf asdfps, developing new featureanoptimizing performance asf  asfsadf asdf asdf asdf asdf asdfps, developing new features optimizing performance asf  asfsadf asdf asdf asdf asdf asdf.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
@@ -211,60 +214,62 @@ export const aboutMe = [
   {
     id: 1,
     title: "React Native Developer - UI Focused",
-    desc: "Desarrollo aplicaciones en React Native con un enfoque en UI, implementando animaciones y mejoras en la experiencia del usuario usando Framer Motion y otras bibliotecas de React. Manejo optimización de rendimiento y diseño intuitivo.",
+    desc: "I develop applications in React Native with a focus on UI, implementing animations and enhancing user experience using Framer Motion and other React libraries. I manage performance optimization and intuitive design.",
     className: "md:col-span-2",
     thumbnail: "/ab1.png",
   },
   {
     id: 2,
     title: "Frontend Developer - React & Next.js",
-    desc: "Creo interfaces modernas y dinámicas con React y Next.js, usando librerías como chadcn para estilos y estructura. Trabajo en la integración de APIs y en la mejora de rendimiento para aplicaciones web.",
+    desc: "I create modern and dynamic interfaces with React and Next.js, using libraries like chadcn for styling and structure. I work on API integration and performance improvements for web applications.",
     className: "md:col-span-2",
     thumbnail: "/ab5.png",
   },
   {
     id: 3,
     title: "Mobile Developer - Swift & iOS SDK",
-    desc: "Desarrollo aplicaciones iOS en Swift, utilizando el SDK de Apple para aprovechar al máximo el sistema. Me especializo en la creación de interfaces de usuario atractivas y de alto rendimiento en el ecosistema iOS.",
+    desc: "I develop iOS applications in Swift, using Apple's SDK to fully leverage the system. I specialize in creating attractive, high-performance user interfaces within the iOS ecosystem.",
     className: "md:col-span-2",
     thumbnail: "/image.gif",
   },
   {
     id: 4,
     title: "Cross-Platform Developer",
-    desc: "Con experiencia en React Native y Swift, enfoco mi desarrollo en crear experiencias de usuario consistentes y fluidas en ambas plataformas, adaptando el diseño según las necesidades de cada sistema operativo.",
+    desc: "With experience in React Native and Swift, I focus on creating consistent, smooth user experiences across both platforms, adapting design based on the requirements of each operating system.",
     className: "md:col-span-2",
     thumbnail: "/ab4.png",
   },
   {
     id: 5,
     title: "Freelance Developer",
-    desc: "He entregado proyectos freelance en React Native y Swift, cubriendo desde la creación de interfaces visuales hasta la optimización de código para mejorar la velocidad y la usabilidad.",
+    desc: "I have delivered freelance projects in React Native and Swift, covering everything from UI creation to code optimization for improved speed and usability.",
     className: "md:col-span-2",
     thumbnail: "/ab6.png",
   },
   {
     id: 6,
     title: "UI-Focused Developer",
-    desc: "Todo mi desarrollo, tanto en web como en móvil, está orientado a construir interfaces que ofrezcan una experiencia visual y funcional sobresaliente, manteniendo siempre la consistencia y la calidad.",
+    desc: "All my development, both in web and mobile, is oriented towards building interfaces that offer outstanding visual and functional experiences, always maintaining consistency and quality.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   }
 ];
 
-
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/elduverx"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/hilos.png",
+    link: "https://www.threads.net/@duverneyx"
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/duverney-muriel-swift-developer/"
   },
 ];
 

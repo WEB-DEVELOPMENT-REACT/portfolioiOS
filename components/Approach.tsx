@@ -13,11 +13,9 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title="React & NextJS"
+          icon={<AceternityIcon order="Web" />}
+          des="Modern, scalable web development using React and Next.js. I build interactive and dynamic user interfaces optimized for performance and SEO, with an architecture suited for projects of any scale. With a strong foundation in JavaScript and TypeScript, I ensure clean and maintainable code, ideal for high-impact web experiences."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +24,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title="Swift & Swift UI"
+          icon={<AceternityIcon order="iOS" />}
+          des="Specialized in native iOS app development with Swift and SwiftUI, designing intuitive and smooth interfaces that leverage the latest capabilities of the Apple ecosystem. I create apps that are both elegant and efficient, focused on delivering an optimized experience on Apple devices. My approach covers both visual design and robust functionality."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +44,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          title="React Native "
+          icon={<AceternityIcon order="Mobile" />}
+          des="Experienced in cross-platform mobile app development using React Native, delivering apps that run smoothly on both iOS and Android. My projects prioritize a consistent and attractive interface, with optimal performance and deep integration with devices to meet diverse user needs and improve usability."
         >
           <CanvasRevealEffect
             animationSpeed={3}
