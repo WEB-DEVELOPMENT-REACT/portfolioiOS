@@ -54,7 +54,7 @@ export const gridItems = [
   {
     id: 5,
     title: "If you are looking for a frontend Dev with knowlegde in React, React Native and Swift for ios. I am the Right One!",
-    description: "The Inside Scoop",
+    description: "The core",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
