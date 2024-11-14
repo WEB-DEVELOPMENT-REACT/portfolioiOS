@@ -9,10 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Duverx | Mobile Developer",
   description: "Mobile Developer with React Native and Swift.",
-  manifest: "/manifest.json",
-  icons: {
-    apple: "/icon.png"
-  }
+
 };
 
 
