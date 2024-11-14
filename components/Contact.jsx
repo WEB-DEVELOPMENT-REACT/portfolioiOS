@@ -5,11 +5,11 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
     return (
-        <div className="pb-20 py-20 w-full flex flex-col min-h-screen justify-between">
+        <div className="pb-20  w-full flex flex-col min-h-screen justify-between">
             <footer className="w-full relative" id="contact">
                 {/* background grid */}
                 <div className="w-full absolute left-0 -bottom-20">
-                    <Image
+                    <img
                         src="/footer-grid.svg"
                         alt="grid"
                         className="w-full h-full opacity-50"
