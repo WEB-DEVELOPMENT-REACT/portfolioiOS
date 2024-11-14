@@ -9,7 +9,7 @@ const Footer = () => {
             <footer className="w-full relative" id="contact">
                 {/* background grid */}
                 <div className="w-full absolute left-0 -bottom-20">
-                    <img
+                    <Image
                         src="/footer-grid.svg"
                         alt="grid"
                         className="w-full h-full opacity-50"
