@@ -7,8 +7,8 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Duverx | Mobile Developer",
-  description: "Mobile Developer with React Native and Swift.",
+  title: "Mobile Developer | Swift & React Native",
+  description: "Mobile Developer with expertise in React Native and Swift. I create modern, efficient, and scalable applications for iOS and cross-platform environments. Always focused on delivering top-notch user experiences.",
 
 };
 
