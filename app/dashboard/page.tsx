@@ -22,8 +22,9 @@ const Page = () => {
         {/* <RecentProjects />
         <Approach />
         <Experience />
-         */}
         <Clients />
+        */}
+
         <Footer />
       </div>
     </main>

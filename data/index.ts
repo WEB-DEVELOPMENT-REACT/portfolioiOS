@@ -1,18 +1,18 @@
 export const navItems = [
   { name: "🏠", link: "/dashboard" },
-  { name: "My Work", link: "/work" },
-  { name: "About", link: "/aboutme" },
+  { name: "Mi Trabajo", link: "/work" },
+  { name: "Acerca de mí", link: "/aboutme" },
 //  { name: "Projects", link: "#projects" },
   // { name: "Testimonios", link: "#testimonials" },
   // { name: "Experience", link: "/experience" },
-  { name: "Stack", link: "/stack" },
-  { name: "Contact", link: "/contact" },
+  { name: "Mi Stack", link: "/stack" },
+  { name: "Contacto", link: "/contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-     title: "Passionate about mobile development",
+     title: "Apasionado por el desarrollo Movil y Web",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -22,7 +22,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Disponible en cualquier parte del mundo.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -32,8 +32,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "Skilled in React Native and SwiftUI",
+    title: "Mi stack tecnológico",
+    description: "Experimentado con Swift & React Native",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -42,7 +42,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tecnólogo apasionado por la ingenieria de software.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -53,8 +53,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "If you are looking for a frontend Dev with knowlegde in React, React Native and Swift for ios. I am the Right One!",
-    description: "The core",
+    title: "Si estas buscando un desarrollador frontend/Mobile en React, React Native and Swift para ios. Soy el indicado!",
+    description: "Mis esenciales",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -63,7 +63,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Empezamos un proyecto juntos?.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -77,7 +77,7 @@ export const projects = [
   {
     id: 1,
     title: "Real State UI",
-    des: "Real Time quick, visible, and native App to iOS",
+    des: "En tiempo real puedes verla, dandole clic en el enlace",
     img: "/rst.webp",
     iconLists: ["/swift.png", "/xcod.png", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/appetize.io/embed/b_ruj7hfyuvwmkfst23ler76e4uq",
@@ -85,7 +85,7 @@ export const projects = [
   {
     id: 2,
     title: "Pedro Portfolio",
-    des: "Another React app, made to show more knowlegde and experiencie since 2022.",
+    des: "otra React app, hecha para mostrar la experiencia de un desarrollador web.",
     img: "/c1.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/portfolio-next-2022.vercel.app/",
@@ -93,15 +93,15 @@ export const projects = [
   {
     id: 3,
     title: "Cripto Market API",
-    des: "Integrate an Cripto Coingecko API to this app, still working.",
+    des: "Integrada una API de monedas virtuales con CoinGecko",
     img: "/c2.png",
     iconLists: ["/swift.png", "/xcod.png", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/appetize.io/embed/b_wgwvab4ehigj2fym4elzm2ggxe",
   },
   {
     id: 4,
-    title: "Love Helper",
-    des: "Developed in next to a special client that loved my interface, and i follow the advices and did it.",
+    title: "Ayuda para el amor",
+    des: "Desarrollada en Next.JS, similar a esta web.",
     img: "/rp-4.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/corazonnegro.vercel.app/",
@@ -169,7 +169,7 @@ export const workExperience = [
   {
     id: 1,
     title: "",
-    desc: "Worked on React Native apps, developing new features and optimizing performance asf   asfsadf asdf asdf asdf asdf asdfps, developing new featureanoptimizing performance asf  asfsadf asdf asdf asdf asdf asdfps, developing new features optimizing performance asf  asfsadf asdf asdf asdf asdf asdf.",
+    desc:"Trabajé en aplicaciones de React Native, desarrollando nuevas características y optimizando el rendimiento.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -213,44 +213,46 @@ export const workExperience = [
 export const aboutMe = [
   {
     id: 1,
-    title: "React Native Developer - UI Focused",
-    desc: "I develop applications in React Native with a focus on UI, implementing animations and enhancing user experience using Framer Motion and other React libraries. I manage performance optimization and intuitive design.",
-    className: "md:col-span-2",
+       title: "Desarrollador iOS - Enfoque en UI",
+    desc: "creando interfaces intuitivas y fluidas. Implemento animaciones avanzadas con SwiftUI, mejorando la experiencia del usuario. Además, optimizo el rendimiento y diseño para garantizar aplicaciones rápidas y atractivas.",
+ className: "md:col-span-2",
     thumbnail: "/ab1.png",
   },
   {
     id: 2,
-    title: "Frontend Developer - React & Next.js",
-    desc: "I create modern and dynamic interfaces with React and Next.js, using libraries like chadcn for styling and structure. I work on API integration and performance improvements for web applications.",
+    title: "Desarrollador Frontend - React & Next.js",
+    desc: "Creo interfaces modernas y dinámicas con React y Next.js, utilizando bibliotecas como chadcn para estilos y estructura. Trabajo en la integración de APIs y mejoras de rendimiento para aplicaciones web.",
     className: "md:col-span-2",
     thumbnail: "/ab5.png",
   },
   {
     id: 3,
-    title: "Mobile Developer - Swift & iOS SDK",
-    desc: "I develop iOS applications in Swift, using Apple's SDK to fully leverage the system. I specialize in creating attractive, high-performance user interfaces within the iOS ecosystem.",
+    title: "Desarrollador Móvil - Swift & iOS SDK",
+    desc: "Desarrollo aplicaciones iOS en Swift, utilizando el SDK de Apple para aprovechar al máximo el sistema. Me especializo en crear interfaces de usuario atractivas y de alto rendimiento dentro del ecosistema iOS.",
+ 
     className: "md:col-span-2",
     thumbnail: "/image.gif",
   },
   {
     id: 4,
-    title: "Cross-Platform Developer",
-    desc: "With experience in React Native and Swift, I focus on creating consistent, smooth user experiences across both platforms, adapting design based on the requirements of each operating system.",
-    className: "md:col-span-2",
+      title: "Pruebas Unitarias - iOS",
+      desc: "Implemento pruebas unitarias en aplicaciones iOS utilizando XCTest para validar la lógica de negocio y funciones clave, asegurando un código confiable y escalable.",
+      
+  className: "md:col-span-2",
     thumbnail: "/ab4.png",
   },
   {
-    id: 5,
-    title: "Freelance Developer",
-    desc: "I have delivered freelance projects in React Native and Swift, covering everything from UI creation to code optimization for improved speed and usability.",
-    className: "md:col-span-2",
-    thumbnail: "/ab6.png",
+      id: 5,
+      title: "Pruebas de Interfaz - iOS",
+      desc: "Automatizo interacciones de usuario con XCUITest, verificando flujos de navegación, formularios y comportamientos clave en aplicaciones nativas.",
+       className: "md:col-span-2",
+      thumbnail: "/ab6.png",
   },
   {
     id: 6,
-    title: "UI-Focused Developer",
-    desc: "All my development, both in web and mobile, is oriented towards building interfaces that offer outstanding visual and functional experiences, always maintaining consistency and quality.",
-    className: "md:col-span-2",
+     title: "Análisis de Rendimiento",
+      desc: "Utilizo herramientas como Instruments en iOS para identificar cuellos de botella y optimizar la eficiencia de las aplicaciones.",
+     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   }
 ];

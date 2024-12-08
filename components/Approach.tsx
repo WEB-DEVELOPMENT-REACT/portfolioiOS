@@ -7,7 +7,7 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        Mi principal <span className="text-purple">Enfoque</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
@@ -15,7 +15,7 @@ const Approach = () => {
         <Card
           title="React & NextJS"
           icon={<AceternityIcon order="Web" />}
-          des="Modern, scalable web development using React and Next.js. I build interactive and dynamic user interfaces optimized for performance and SEO, with an architecture suited for projects of any scale. With a strong foundation in JavaScript and TypeScript, I ensure clean and maintainable code, ideal for high-impact web experiences."
+          des="Desarrollo web moderno y escalable utilizando React y Next.js. Creo interfaces de usuario interactivas y dinámicas, optimizadas para el rendimiento y SEO, con una arquitectura adecuada para proyectos de cualquier escala. Con una sólida base en JavaScript y TypeScript, garantizo un código limpio y mantenible, ideal para experiencias web de alto impacto."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,7 +26,7 @@ const Approach = () => {
         <Card
           title="Swift & Swift UI"
           icon={<AceternityIcon order="iOS" />}
-          des="Specialized in native iOS app development with Swift and SwiftUI, designing intuitive and smooth interfaces that leverage the latest capabilities of the Apple ecosystem. I create apps that are both elegant and efficient, focused on delivering an optimized experience on Apple devices. My approach covers both visual design and robust functionality."
+          des= "Especializado en el desarrollo de aplicaciones nativas para iOS con Swift y SwiftUI, diseñando interfaces intuitivas y fluidas que aprovechan las últimas capacidades del ecosistema de Apple. Creo aplicaciones elegantes y eficientes, enfocadas en ofrecer una experiencia optimizada en dispositivos Apple. Mi enfoque abarca tanto el diseño visual como una funcionalidad robusta."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -45,8 +45,8 @@ const Approach = () => {
         </Card>
         <Card
           title="React Native "
-          icon={<AceternityIcon order="Mobile" />}
-          des="Experienced in cross-platform mobile app development using React Native, delivering apps that run smoothly on both iOS and Android. My projects prioritize a consistent and attractive interface, with optimal performance and deep integration with devices to meet diverse user needs and improve usability."
+          icon={<AceternityIcon order="Tests" />}
+          des="Con experiencia en el desarrollo y testing de aplicaciones móviles nativas para iOS utilizando Swift, asegurando un funcionamiento impecable y una experiencia de usuario de alta calidad. Mis proyectos priorizan pruebas exhaustivas, combinando herramientas de testing automatizado y manual, para garantizar una interfaz intuitiva, un rendimiento óptimo y una integración nativa profunda con el ecosistema iOS. Implemento estrategias de testing como XCTest, UI Testing, y TestFlight para identificar y solucionar problemas antes del lanzamiento, mejorando la usabilidad y la satisfacción del usuario final."
         >
           <CanvasRevealEffect
             animationSpeed={3}

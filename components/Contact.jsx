@@ -18,23 +18,21 @@ const Footer = () => {
 
                 <div className="flex pb-10 flex-col items-center">
                     <h1 className="heading lg:max-w-[45vw]">
-                        Ready to take <span className="text-purple">your</span> digital
-                        presence to the next level?
+                        ¿Quieres organizar una reunion y <span className="text-purple">analizar</span> la presencia digital de tu empresa?
                     </h1>
                     <p className="text-white-200 md:mt-10 my-20 text-center">
-                        Reach out to me today and let&apos;s discuss how I can help you
-                        achieve your goals.
+                        te dejo dos opciones de contacto para llegar a nosotros de la manera más fácil posible.
                     </p>
                     <a href="https://t.me/DuverxDev">
                         <MagicButton
-                            title="Let's get in touch"
+                            title="Telegram"
                             icon={<FaLocationArrow />}
                             position="right"
                         />
                     </a>
                     <a className="mt-4" href="https://wa.me/+34673685542">
                         <MagicButton
-                            title="Reach Me!"
+                            title="WhatsApp"
                             icon={<FaWhatsapp />}
                             position="right"
                         />
