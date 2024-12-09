@@ -19,6 +19,7 @@ export const gridItems = [
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
+    link: "/work"
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ export const gridItems = [
     titleClassName: "justify-start",
     img: "",
     spareImg: "",
+    link: ""
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
+    link: "/stack"
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ export const gridItems = [
     titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
+    link: "/work"
   },
 
   {
@@ -60,6 +64,7 @@ export const gridItems = [
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
+    link: "/aboutme"
   },
   {
     id: 6,
@@ -70,6 +75,7 @@ export const gridItems = [
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
+    link: ""
   },
 ];
 
