@@ -90,11 +90,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Pedro Portfolio",
-    des: "otra React app, hecha para mostrar la experiencia de un desarrollador web.",
-    img: "/c1.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/portfolio-next-2022.vercel.app/",
+    title: "Iphone 15 pro",
+    des: "clon exacto de la página oficial de apple haciendo uso de tecnologias 3D.",
+    img: "/iphone.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://iphone-psi-two.vercel.app/",
   },
   {
     id: 3,
