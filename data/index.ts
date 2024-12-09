@@ -94,7 +94,7 @@ export const projects = [
     des: "clon exacto de la página oficial de apple haciendo uso de tecnologias 3D.",
     img: "/iphone.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://iphone-psi-two.vercel.app/",
+    link: "/iphone-psi-two.vercel.app/",
   },
   {
     id: 3,
