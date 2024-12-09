@@ -1,11 +1,11 @@
 export const navItems = [
   { name: "🏠", link: "/dashboard" },
-  { name: "Mi Trabajo", link: "/work" },
-  { name: "Acerca de mí", link: "/aboutme" },
+  { name: "Proyectos", link: "/work" },
+  { name: "Nosotros", link: "/aboutme" },
 //  { name: "Projects", link: "#projects" },
   // { name: "Testimonios", link: "#testimonials" },
   // { name: "Experience", link: "/experience" },
-  { name: "Mi Stack", link: "/stack" },
+  { name: "Stack", link: "/stack" },
   { name: "Contacto", link: "/contact" },
 ];
 
