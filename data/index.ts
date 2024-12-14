@@ -110,7 +110,7 @@ export const projects = [
     des: "Desarrollada en Next.JS, profesional Web de Marketing",
     img: "/rp-4.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
-    link: "/digital-marketing-chi.vercel.app/",
+    link: "/birdmarketing.vercel.app/",
   },
 ];
 
