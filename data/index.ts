@@ -106,11 +106,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Ayuda para el amor",
-    des: "Desarrollada en Next.JS, similar a esta web.",
+    title: "Marketing Agency",
+    des: "Desarrollada en Next.JS, profesional Web de Marketing",
     img: "/rp-4.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/corazonnegro.vercel.app/",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/digital-marketing-tau.vercel.app/",
   },
 ];
 
