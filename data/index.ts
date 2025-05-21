@@ -1,8 +1,8 @@
 export const navItems = [
-  { name: "🏠", link: "/dashboard" },
+  { name: "Inicio", link: "/dashboard" },
   { name: "Proyectos", link: "/work" },
   { name: "Nosotros", link: "/aboutme" },
-//  { name: "Projects", link: "#projects" },
+  //  { name: "Projects", link: "#projects" },
   // { name: "Testimonios", link: "#testimonials" },
   // { name: "Experience", link: "/experience" },
   { name: "Stack", link: "/stack" },
@@ -12,14 +12,14 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-     title: "Apasionado por el desarrollo Movil y Web",
+    title: "Apasionado por el desarrollo Movil y Web",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
-    link: "/work"
+    link: "/work",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const gridItems = [
     titleClassName: "justify-start",
     img: "",
     spareImg: "",
-    link: ""
+    link: "",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
-    link: "/stack"
+    link: "/stack",
   },
   {
     id: 4,
@@ -52,19 +52,20 @@ export const gridItems = [
     titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
-    link: "/work"
+    link: "/work",
   },
 
   {
     id: 5,
-    title: "Si estas buscando un desarrollador frontend/Mobile en React, React Native and Swift para ios. Soy el indicado!",
+    title:
+      "Si estas buscando un desarrollador frontend/Mobile en React, React Native and Swift para ios. Soy el indicado!",
     description: "Mis esenciales",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
-    link: "/aboutme"
+    link: "/aboutme",
   },
   {
     id: 6,
@@ -75,7 +76,7 @@ export const gridItems = [
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
-    link: ""
+    link: "",
   },
 ];
 
@@ -87,6 +88,14 @@ export const projects = [
     img: "/rst.webp",
     iconLists: ["/swift.png", "/xcod.png", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/appetize.io/embed/b_ruj7hfyuvwmkfst23ler76e4uq",
+  },
+  {
+    id: 4,
+    title: "Diva Estetica",
+    des: "Desarrollada en Next.JS, profesional Web de  estetica",
+    img: "/divas.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/divaestetica.es/",
   },
   {
     id: 2,
@@ -112,6 +121,15 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
     link: "/birdmarketing.es",
   },
+
+  {
+    id: 4,
+    title: "Real State Agency",
+    des: "Desarrollada en Next.JS, profesional Web de Inmobiliaria",
+    img: "/rl.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/gruposergiomartinez.com",
+  },
 ];
 
 export const testimonials = [
@@ -120,21 +138,21 @@ export const testimonials = [
       "Incredible dedication and skill. Our project transformed thanks to his expertise in React Native and Swift.",
     name: "James Miller",
     title: "Product Manager at HealthSync",
-    img: "/profile.svg"
+    img: "/profile.svg",
   },
   {
     quote:
       "A skilled developer with attention to detail. He optimized our app for both platforms, increasing efficiency and user satisfaction.",
     name: "Emma Taylor",
     title: "Tech Lead at GreenHome Tech",
-     img: "/profile4m.png"
+    img: "/profile4m.png",
   },
   {
     quote:
       "Exceeded expectations! The app was intuitive, high-quality, and seamless across Android and iOS.",
     name: "Daniel Martinez",
     title: "CEO at Ecomfy",
-     img: "/profile1h.png"
+    img: "/profile1h.png",
   },
 ];
 
@@ -175,7 +193,7 @@ export const workExperience = [
   {
     id: 1,
     title: "",
-    desc:"Trabajé en aplicaciones de React Native, desarrollando nuevas características y optimizando el rendimiento.",
+    desc: "Trabajé en aplicaciones de React Native, desarrollando nuevas características y optimizando el rendimiento.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -189,7 +207,7 @@ export const workExperience = [
   {
     id: 3,
     title: "Freelance Mobile App Developer",
-    desc:  "Delivered various projects, including React Native and Swift-based apps for clients.",
+    desc: "Delivered various projects, including React Native and Swift-based apps for clients.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
@@ -219,9 +237,9 @@ export const workExperience = [
 export const aboutMe = [
   {
     id: 1,
-       title: "Desarrollador iOS - Enfoque en UI",
+    title: "Desarrollador iOS - Enfoque en UI",
     desc: "creando interfaces intuitivas y fluidas. Implemento animaciones avanzadas con SwiftUI, mejorando la experiencia del usuario. Además, optimizo el rendimiento y diseño para garantizar aplicaciones rápidas y atractivas.",
- className: "md:col-span-2",
+    className: "md:col-span-2",
     thumbnail: "/ab1.png",
   },
   {
@@ -235,49 +253,48 @@ export const aboutMe = [
     id: 3,
     title: "Desarrollador Móvil - Swift & iOS SDK",
     desc: "Desarrollo aplicaciones iOS en Swift, utilizando el SDK de Apple para aprovechar al máximo el sistema. Me especializo en crear interfaces de usuario atractivas y de alto rendimiento dentro del ecosistema iOS.",
- 
+
     className: "md:col-span-2",
     thumbnail: "/image.gif",
   },
   {
     id: 4,
-      title: "Pruebas Unitarias - iOS",
-      desc: "Implemento pruebas unitarias en aplicaciones iOS utilizando XCTest para validar la lógica de negocio y funciones clave, asegurando un código confiable y escalable.",
-      
-  className: "md:col-span-2",
+    title: "Pruebas Unitarias - iOS",
+    desc: "Implemento pruebas unitarias en aplicaciones iOS utilizando XCTest para validar la lógica de negocio y funciones clave, asegurando un código confiable y escalable.",
+
+    className: "md:col-span-2",
     thumbnail: "/ab4.png",
   },
   {
-      id: 5,
-      title: "Pruebas de Interfaz - iOS",
-      desc: "Automatizo interacciones de usuario con XCUITest, verificando flujos de navegación, formularios y comportamientos clave en aplicaciones nativas.",
-       className: "md:col-span-2",
-      thumbnail: "/ab6.png",
+    id: 5,
+    title: "Pruebas de Interfaz - iOS",
+    desc: "Automatizo interacciones de usuario con XCUITest, verificando flujos de navegación, formularios y comportamientos clave en aplicaciones nativas.",
+    className: "md:col-span-2",
+    thumbnail: "/ab6.png",
   },
   {
     id: 6,
-     title: "Análisis de Rendimiento",
-      desc: "Utilizo herramientas como Instruments en iOS para identificar cuellos de botella y optimizar la eficiencia de las aplicaciones.",
-     className: "md:col-span-2",
+    title: "Análisis de Rendimiento",
+    desc: "Utilizo herramientas como Instruments en iOS para identificar cuellos de botella y optimizar la eficiencia de las aplicaciones.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
-  }
+  },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/elduverx"
+    link: "https://github.com/elduverx",
   },
   {
     id: 2,
     img: "/hilos.png",
-    link: "https://www.threads.net/@duverneyx"
+    link: "https://www.threads.net/@duverneyx",
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/duverney-muriel-swift-developer/"
+    link: "https://www.linkedin.com/in/duverney-muriel-swift-developer/",
   },
 ];
-
