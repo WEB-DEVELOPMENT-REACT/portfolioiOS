@@ -10,8 +10,8 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "@react-three/drei": "^10.0.8",
-    "@react-three/fiber": "^8.16.2",
+    "@react-three/drei": "^8.7.4",
+    "@react-three/fiber": "^8.15.16",
     "@tabler/icons-react": "^3.1.0",
     "@types/three": "^0.163.0",
     "class-variance-authority": "^0.7.0",
