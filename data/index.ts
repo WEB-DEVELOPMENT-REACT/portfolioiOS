@@ -88,7 +88,31 @@ export const projects = [
     img: "/rst.webp",
     iconLists: ["/swift.png", "/xcod.png", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/appetize.io/embed/b_ruj7hfyuvwmkfst23ler76e4uq",
+  }, 
+   {
+    id: 9,
+    title: "Gracia Masajes",
+    des: "Desarrollada en Next.JS, profesional Web de  estetica",
+    img: "/masaje.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/masajes-eight.vercel.app//",
   },
+  {
+    id: 10,
+    title: "Psicologia Privada",
+    des: "Desarrollada en Next.JS, profesional Web de  Psicologia",
+    img: "/psico.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/psicologiaprivada.com/",
+  },{
+    id: 11,
+    title: "Pagina Promocional",
+    des: "Desarrollada en Next.JS, profesional Web de  Real State",
+    img: "/smpro.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/gruposergiomartinez.es/",
+  },
+
   {
     id: 4,
     title: "Diva Estetica",
@@ -114,7 +138,7 @@ export const projects = [
     link: "/appetize.io/embed/b_wgwvab4ehigj2fym4elzm2ggxe",
   },
   {
-    id: 4,
+    id: 5,
     title: "Marketing Agency",
     des: "Desarrollada en Next.JS, profesional Web de Marketing",
     img: "/rp-4.png",
@@ -123,12 +147,28 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 6,
     title: "Real State Agency",
     des: "Desarrollada en Next.JS, profesional Web de Inmobiliaria",
     img: "/rl.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
     link: "/gruposergiomartinez.com",
+  },
+  {
+    id: 7,
+    title: "Admin Dashboard",
+    des: "Desarrollada en Next.JS, profesional Web de Dashboard",
+    img: "/crmadmin.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/gruposergiomartinez.com/admin",
+  },
+  {
+    id: 8,
+    title: "Gine SAT",
+    des: "Desarrollada en Next.JS, profesional Web de  Mantenimiento",
+    img: "/ginesat.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/gsap.svg"],
+    link: "/divaestetica.es/",
   },
 ];
 

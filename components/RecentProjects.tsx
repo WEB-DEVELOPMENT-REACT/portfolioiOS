@@ -14,10 +14,10 @@ const RecentProjects = () => {
         Pequeña seleccion de {" "}
         <span className="text-purple">los proyectos más recientes</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-10 p-4">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full"
             key={item.id}
           >
             <a href={`/${item.link}`} >
