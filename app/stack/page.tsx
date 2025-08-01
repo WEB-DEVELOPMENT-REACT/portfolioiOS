@@ -1,8 +1,20 @@
 "use client";
 
 import { navItems } from "@/data";
+import { Metadata } from "next";
 import Approach from "@/components/Approach";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
+export const metadata: Metadata = {
+  title: "Stack Tecnológico - Herramientas y Tecnologías",
+  description: "Descubre mi stack tecnológico: Swift, React Native, Next.js, TypeScript, Xcode, y más. Herramientas y tecnologías que utilizo para crear aplicaciones móviles y web de alta calidad.",
+  keywords: ["stack tecnológico", "Swift", "React Native", "Next.js", "TypeScript", "Xcode", "herramientas desarrollo", "tecnologías"],
+  openGraph: {
+    title: "Stack Tecnológico - Duverney Muriel | Herramientas y Tecnologías",
+    description: "Descubre mi stack tecnológico: Swift, React Native, Next.js, TypeScript y más herramientas para desarrollo móvil y web.",
+    url: "/stack",
+  },
+};
 
 
 
