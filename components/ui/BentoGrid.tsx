@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import dynamic from "next/dynamic";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-import { BackgroundGradientAnimation } from "./GradientBg";
+const BackgroundGradientAnimation = dynamic(() => import("./GradientBg").then(mod => ({ default: mod.BackgroundGradientAnimation })), {
+  ssr: false,
+});
+
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
@@ -70,8 +74,10 @@ export const BentoGridItem = ({
 
   const handleCopy = () => {
     const text = "elduverxdev@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    if (typeof window !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(text);
+      setCopied(true);
+    }
   };
 
   return (
