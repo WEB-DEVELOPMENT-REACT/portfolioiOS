@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">1. Información General</h2>
             <p className="mb-4">
-              Duver Muriel ("nosotros", "nuestro" o "nos") se compromete a proteger su privacidad.
+              Duver Muriel se compromete a proteger su privacidad.
               Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos
               su información cuando visita nuestro sitio web o utiliza nuestros servicios.
             </p>
