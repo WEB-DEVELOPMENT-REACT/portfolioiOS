@@ -101,7 +101,17 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {img && (
+          {id === 1 ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className={cn(imgClassName, "object-cover object-center ")}
+            >
+              <source src="/firstsoft.mp4" type="video/mp4" />
+            </video>
+          ) : img && (
             <img
             src={img}
             alt={img}
