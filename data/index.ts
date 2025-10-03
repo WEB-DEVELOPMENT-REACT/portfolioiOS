@@ -12,10 +12,10 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Apasionado por el desarrollo Movil y Web",
-    description: "",
+    title: "Transformo ideas en productos digitales de alto impacto",
+    description: "Creador Digital",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
+    imgClassName: "w-full h-full opacity-90",
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
@@ -23,8 +23,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Disponible en cualquier parte del mundo.",
-    description: "",
+    title: "Disponibilidad global para tu proyecto",
+    description: "Trabajo remoto",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -34,8 +34,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Mi stack tecnológico",
-    description: "Experimentado con Swift & React Native",
+    title: "Stack moderno y probado en producción",
+    description: "Swift, React Native, Next.js & TypeScript",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -45,8 +45,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tecnólogo apasionado por la ingenieria de software.",
-    description: "",
+    title: "De la idea al lanzamiento: desarrollo completo de apps móviles y web",
+    description: "Full-Stack Developer",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -58,8 +58,8 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Si estas buscando un desarrollador frontend/Mobile en React, React Native and Swift para ios. Soy el indicado!",
-    description: "Mis esenciales",
+      "Especializado en crear experiencias de usuario excepcionales con código limpio y escalable",
+    description: "iOS & Web Expert",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -69,8 +69,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Empezamos un proyecto juntos?.",
-    description: "",
+    title: "Convierte tu visión en realidad",
+    description: "Hablemos",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
