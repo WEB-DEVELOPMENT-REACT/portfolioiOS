@@ -7,46 +7,41 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        Mi principal <span className="text-purple">Enfoque</span>
+        Nuestra <span className="text-purple">Especialidad</span>
       </h1>
-      {/* remove bg-white dark:bg-black */}
+      <p className="text-center text-white-200 mt-4 mb-8 text-lg max-w-3xl mx-auto">
+        Transformamos tu visión en productos digitales escalables que impulsan el crecimiento de tu negocio
+      </p>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-        {/* add des prop */}
         <Card
-          title="React & NextJS"
+          title="Web Apps Profesionales"
           icon={<AceternityIcon order="Web" />}
-          des="Desarrollo web moderno y escalable utilizando React y Next.js. Creo interfaces de usuario interactivas y dinámicas, optimizadas para el rendimiento y SEO, con una arquitectura adecuada para proyectos de cualquier escala. Con una sólida base en JavaScript y TypeScript, garantizo un código limpio y mantenible, ideal para experiencias web de alto impacto."
+          des="Desarrollamos plataformas web modernas y escalables con React y Next.js que convierten visitantes en clientes. Desde landing pages de alta conversión hasta aplicaciones web complejas con paneles de administración, integraciones de pago y sistemas de gestión. Optimizadas para SEO, rendimiento y experiencia de usuario, cada proyecto está diseñado para generar resultados medibles y crecer con tu negocio."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
-            // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
             containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
           />
         </Card>
         <Card
-          title="Swift & Swift UI"
+          title="Apps Móviles Nativas"
           icon={<AceternityIcon order="iOS" />}
-          des= "Especializado en el desarrollo de aplicaciones nativas para iOS con Swift y SwiftUI, diseñando interfaces intuitivas y fluidas que aprovechan las últimas capacidades del ecosistema de Apple. Creo aplicaciones elegantes y eficientes, enfocadas en ofrecer una experiencia optimizada en dispositivos Apple. Mi enfoque abarca tanto el diseño visual como una funcionalidad robusta."
+          des="Creamos aplicaciones móviles nativas para iOS que destacan en la App Store. Utilizando Swift y SwiftUI, desarrollamos apps intuitivas y potentes que aprovechan al máximo el ecosistema Apple: notificaciones push, integración con Apple Pay, iCloud, Face ID y más. Perfectas para negocios que buscan ofrecer una experiencia premium a sus clientes y aumentar la fidelización mediante una presencia móvil profesional."
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            // change bg-black to bg-pink-900
             containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
             colors={[
-              // change the colors of the
               [255, 166, 158],
               [221, 255, 247],
             ]}
             dotSize={2}
           />
-          {/* Radial gradient for the cute fade */}
-          {/* remove this one */}
-          {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="React Native "
-          icon={<AceternityIcon order="Tests" />}
-          des="Con experiencia en el desarrollo y testing de aplicaciones móviles nativas para iOS utilizando Swift, asegurando un funcionamiento impecable y una experiencia de usuario de alta calidad. Mis proyectos priorizan pruebas exhaustivas, combinando herramientas de testing automatizado y manual, para garantizar una interfaz intuitiva, un rendimiento óptimo y una integración nativa profunda con el ecosistema iOS. Implemento estrategias de testing como XCTest, UI Testing, y TestFlight para identificar y solucionar problemas antes del lanzamiento, mejorando la usabilidad y la satisfacción del usuario final."
+          title="Automatización & Optimización"
+          icon={<AceternityIcon order="Auto" />}
+          des="Automatizamos procesos que consumen tiempo y recursos en tu negocio. Desde integraciones con CRM y sistemas de email marketing, hasta flujos de trabajo automatizados con Zapier, Make o soluciones custom. Conectamos tus herramientas existentes (Stripe, Shopify, HubSpot, Google Sheets, WhatsApp Business) para que trabajen juntas sin intervención manual. El resultado: más ventas, menos errores y equipos enfocados en lo que realmente importa."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -137,45 +132,22 @@ const Card = ({
     </div>
   );
 };
-// add order prop for the Phase number change
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      {/* this btn is from https://ui.aceternity.com/components/tailwindcss-buttons border magic */}
-      {/* change rounded-lg, text-purple px-5 py-2 */}
-      {/* remove focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 cuz we don't need to focus */}
-      {/* remove text-sm font-medium h-12 , add font-bold text-2xl */}
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
         <span
           className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
          bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
         />
         <span
-          className="inline-flex h-full w-full cursor-pointer items-center 
+          className="inline-flex h-full w-full cursor-pointer items-center
         justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
         >
           {order}
         </span>
       </button>
     </div>
-    // remove the svg and add the button
-    // <svg
-    //   width="66"
-    //   height="65"
-    //   viewBox="0 0 66 65"
-    //   fill="none"
-    //   xmlns="http://www.w3.org/2000/svg"
-    //   className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white "
-    // >
-    //   <path
-    //     d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-    //     stroke="currentColor"
-    //     strokeWidth="15"
-    //     strokeMiterlimit="3.86874"
-    //     strokeLinecap="round"
-    //     style={{ mixBlendMode: "darken" }}
-    //   />
-    // </svg>
   );
 };
 

@@ -12,8 +12,11 @@ const AboutMe = () => {
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
    <div className="max-w-7xl w-full py-20">
       <h1 className="heading">
-        Acerca <span className="text-purple">de Mí</span>
+        Nuestra <span className="text-purple">Expertise</span>
       </h1>
+      <p className="text-center text-white-200 mt-4 mb-8 text-lg max-w-3xl mx-auto">
+        Combinamos tecnología avanzada y metodologías probadas para entregar soluciones digitales que generan resultados
+      </p>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {aboutMe.map((card) => (
