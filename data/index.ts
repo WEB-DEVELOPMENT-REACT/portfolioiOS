@@ -554,13 +554,11 @@ export const packDetails = {
       {
         title: "Diseñador Freelance",
         description: "Landing page con portfolio visual, testimonios de clientes y sistema de contacto directo",
-        image: "/examples/freelance.jpg",
         metrics: { conversion: "45% más conversiones", traffic: "1.2K visitas/mes", leads: "23 leads/mes" }
       },
       {
         title: "Consultoría Empresarial",
         description: "Sitio profesional con descripción de servicios, casos de éxito y agenda de reuniones integrada",
-        image: "/examples/consulting.jpg",
         metrics: { conversion: "38% más conversiones", traffic: "800 visitas/mes", leads: "15 consultas/mes" }
       }
     ],
@@ -636,19 +634,16 @@ export const packDetails = {
       {
         title: "Agencia de Marketing Digital",
         description: "Plataforma corporativa con blog activo, portfolio de proyectos y sistema automatizado de presupuestos",
-        image: "/examples/agency.jpg",
         metrics: { conversion: "62% más conversiones", traffic: "4.5K visitas/mes", leads: "87 leads cualificados/mes" }
       },
       {
         title: "Clínica Odontológica",
         description: "Web profesional con sistema de reservas online, contenido educativo y gestión de pacientes",
-        image: "/examples/clinic.jpg",
         metrics: { conversion: "54% más conversiones", traffic: "3.2K visitas/mes", leads: "65 citas/mes" }
       },
       {
         title: "Bufete de Abogados",
         description: "Sitio especializado con áreas de práctica, perfiles del equipo y consultas personalizadas",
-        image: "/examples/legal.jpg",
         metrics: { conversion: "48% más conversiones", traffic: "2.8K visitas/mes", leads: "42 consultas/mes" }
       }
     ],
@@ -724,19 +719,16 @@ export const packDetails = {
       {
         title: "Plataforma SaaS B2B",
         description: "Funnel automatizado de demos con sistema de scoring de leads y seguimiento personalizado hasta cierre",
-        image: "/examples/saas.jpg",
         metrics: { conversion: "127% más conversiones", mqls: "340 MQLs/mes", demos: "89 demos/mes" }
       },
       {
         title: "Academia Digital",
         description: "Sistema de captación con webinars pregrabados, secuencias de email y nurturing automatizado",
-        image: "/examples/education.jpg",
         metrics: { conversion: "94% más conversiones", leads: "560 registros/mes", ventas: "78 matrículas/mes" }
       },
       {
         title: "Marketplace Vertical",
         description: "Doble embudo para compradores y vendedores con onboarding segmentado y activación automatizada",
-        image: "/examples/marketplace.jpg",
         metrics: { conversion: "156% más conversiones", users: "1.2K usuarios/mes", gmv: "45K volumen/mes" }
       }
     ],
@@ -812,19 +804,16 @@ export const packDetails = {
       {
         title: "Plataforma de Fitness Virtual",
         description: "App de clases online con sistema de suscripciones, calendario de sesiones y comunidad de usuarios",
-        image: "/examples/fitness-app.jpg",
         metrics: { users: "450 usuarios activos", mrr: "3.2K MRR", retention: "67% retención" }
       },
       {
         title: "Marketplace Hiperlocal",
         description: "Aplicación que conecta comercios locales con consumidores del barrio, con pasarela de pagos integrada",
-        image: "/examples/marketplace-app.jpg",
         metrics: { users: "1.2K usuarios", gmv: "28K GMV/mes", nps: "8.4 NPS score" }
       },
       {
         title: "Herramienta de Gestión",
         description: "SaaS de productividad para equipos distribuidos con tableros kanban y colaboración en tiempo real",
-        image: "/examples/productivity.jpg",
         metrics: { users: "320 empresas", mrr: "2.8K MRR", churn: "4.2% churn" }
       }
     ],
@@ -900,19 +889,16 @@ export const packDetails = {
       {
         title: "Distribuidora Industrial",
         description: "CRM con automatización de seguimiento a 300+ clientes B2B, cotizaciones automáticas y alertas de recompra",
-        image: "/examples/distributor.jpg",
         metrics: { efficiency: "65% menos tiempo admin", sales: "40% más cierre", response: "Respuesta en 2min" }
       },
       {
         title: "Inmobiliaria Regional",
         description: "Sistema completo con chatbot calificador, tours virtuales automatizados y CRM con pipeline visual",
-        image: "/examples/realestate.jpg",
         metrics: { leads: "180 leads/mes", conversion: "32% más conversión", time: "70% menos tiempo manual" }
       },
       {
         title: "Centro de Formación",
         description: "Automatización de inscripciones, nurturing de interesados y dashboard de conversión por curso",
-        image: "/examples/training.jpg",
         metrics: { enrollment: "210 matrículas/mes", automation: "85% procesos auto", roi: "3.2x ROI" }
       }
     ],
@@ -992,19 +978,16 @@ export const packDetails = {
       {
         title: "E-commerce de Moda",
         description: "Ecosistema completo con programa de puntos, recomendaciones personalizadas con IA y campañas omnicanal segmentadas",
-        image: "/examples/fashion.jpg",
         metrics: { ltv: "2.4x mayor LTV", retention: "58% retención año", revenue: "280K adicionales/año" }
       },
       {
         title: "Cadena de Restaurantes",
         description: "App de fidelización con pedidos, gamificación por visitas y campañas hiperpersonalizadas por preferencias",
-        image: "/examples/restaurant.jpg",
         metrics: { members: "12K miembros activos", frequency: "3.2 visitas/mes", ticket: "25% mayor ticket" }
       },
       {
         title: "SaaS Empresarial",
         description: "Sistema de onboarding automatizado, health scores predictivos y programa de referidos con incentivos dinámicos",
-        image: "/examples/saas-enterprise.jpg",
         metrics: { churn: "42% menos churn", expansion: "65K upsell/mes", referrals: "30% vienen referidos" }
       }
     ],
@@ -1083,19 +1066,16 @@ export const packDetails = {
       {
         title: "E-commerce B2C",
         description: "Tienda online con 5000 visitas/mes, actualizaciones semanales de productos y campañas promocionales",
-        image: "/examples/ecommerce-maintenance.jpg",
         metrics: { uptime: "99.98% uptime", speed: "40% más rápido", issues: "0 incidentes críticos" }
       },
       {
         title: "Portal Corporativo",
         description: "Sitio web corporativo con blog activo, formularios de contacto y sección de noticias actualizable",
-        image: "/examples/corporate-maintenance.jpg",
         metrics: { security: "100% protegido", updates: "24 actualizaciones/año", response: "Respuesta <3h" }
       },
       {
         title: "Web de Servicios",
         description: "Plataforma de reservas con integraciones de pago y calendario sincronizado",
-        image: "/examples/services-maintenance.jpg",
         metrics: { backups: "365 backups/año", performance: "Score 95/100", support: "12 tickets resueltos" }
       }
     ],

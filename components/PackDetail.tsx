@@ -6,6 +6,12 @@ import Link from "next/link";
 import { packs } from "@/data";
 import MagicButton from "./MagicButton";
 import { FaArrowRight, FaPlay } from "react-icons/fa6";
+import {
+  DEFAULT_PACK_VIDEO,
+  generatePackVideoAssignments,
+  loadAssignmentsFromStorage,
+  saveAssignmentsToStorage,
+} from "@/lib/packVideos";
 
 interface PackDetailProps {
   slug: string;
@@ -83,6 +89,38 @@ const getIconComponent = (iconName: string) => {
 const PackDetail = ({ slug, details }: PackDetailProps) => {
   const pack = packs.find((p) => p.slug === slug);
 
+  const [videoSrc, setVideoSrc] = React.useState(
+    pack?.previewVideo ?? DEFAULT_PACK_VIDEO
+  );
+
+  React.useEffect(() => {
+    if (!pack) {
+      setVideoSrc(DEFAULT_PACK_VIDEO);
+      return;
+    }
+
+    const storedAssignments = loadAssignmentsFromStorage();
+    let resolvedVideo = storedAssignments?.[pack.slug];
+
+    if (!resolvedVideo) {
+      const usedVideos = storedAssignments ? Object.values(storedAssignments) : [];
+      const newAssignments = generatePackVideoAssignments(
+        [pack.slug],
+        usedVideos
+      );
+      resolvedVideo =
+        newAssignments[pack.slug] ?? pack.previewVideo ?? DEFAULT_PACK_VIDEO;
+      const mergedAssignments = {
+        ...(storedAssignments ?? {}),
+        ...newAssignments,
+      };
+
+      saveAssignmentsToStorage(mergedAssignments);
+    }
+
+    setVideoSrc(resolvedVideo ?? pack.previewVideo ?? DEFAULT_PACK_VIDEO);
+  }, [pack, slug]);
+
   if (!pack) return null;
 
   const stats = [
@@ -103,7 +141,15 @@ const PackDetail = ({ slug, details }: PackDetailProps) => {
   ];
 
   const highlightFeatures = pack.features.slice(0, 3);
-  const videoSrc = pack.previewVideo ?? "/firstsoft.mp4";
+  const formatMetricLabel = (label: string) =>
+    label
+      .replace(/_/g, " ")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
+  const exampleGradients = [
+    "from-purple/35 via-purple/15 to-transparent",
+    "from-pink-500/30 via-purple/15 to-transparent",
+    "from-sky-500/30 via-purple/10 to-transparent",
+  ];
 
   return (
     <div className="w-full">
@@ -303,6 +349,8 @@ const PackDetail = ({ slug, details }: PackDetailProps) => {
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {details.examples.map((example: any, idx: number) => {
             const metrics = Object.entries(example.metrics ?? {});
+            const [primaryMetricKey, primaryMetricValue] = metrics[0] ?? [];
+            const gradientClass = exampleGradients[idx % exampleGradients.length];
 
             return (
               <motion.div
@@ -312,19 +360,35 @@ const PackDetail = ({ slug, details }: PackDetailProps) => {
                 transition={{ delay: idx * 0.1 }}
                 className="group relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.04] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-2 hover:border-purple/60"
               >
-                <div className="relative h-48 overflow-hidden">
-                  {example.image ? (
-                    <div
-                      className="absolute inset-0 bg-cover bg-center"
-                      style={{ backgroundImage: `url(${example.image})` }}
-                    />
-                  ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple/30 via-purple/10 to-transparent" />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
-                  <span className="absolute left-4 top-4 inline-flex items-center rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-white">
-                    Caso real
-                  </span>
+                <div className={`relative overflow-hidden rounded-t-3xl bg-gradient-to-br ${gradientClass}`}>
+                  <div
+                    className="absolute inset-0 opacity-70 mix-blend-screen"
+                    style={{
+                      background:
+                        "radial-gradient(circle at top, rgba(255,255,255,0.45), transparent 62%)",
+                    }}
+                  />
+                  <div className="relative flex h-full flex-col justify-between px-6 py-6 gap-6">
+                    <span className="inline-flex w-fit items-center rounded-full bg-black/55 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-white">
+                      Caso real
+                    </span>
+                    {primaryMetricValue ? (
+                      <div>
+                        <p className="text-[11px] uppercase tracking-[0.3em] text-white/70">
+                          {typeof primaryMetricKey === "string"
+                            ? formatMetricLabel(primaryMetricKey)
+                            : "Resultados"}
+                        </p>
+                        <p className="mt-2 text-3xl font-semibold text-white">
+                          {primaryMetricValue as string}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="text-sm text-white/80 max-w-xs">
+                        Resultados medibles y alineados con los objetivos del negocio.
+                      </p>
+                    )}
+                  </div>
                 </div>
 
                 <div className="space-y-4 px-6 py-6">

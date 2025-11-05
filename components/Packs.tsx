@@ -1,9 +1,18 @@
+'use client';
+
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { packs } from "@/data";
+import {
+  DEFAULT_PACK_VIDEO,
+  type PackVideoAssignments,
+  generatePackVideoAssignments,
+  loadAssignmentsFromStorage,
+  saveAssignmentsToStorage,
+} from "@/lib/packVideos";
 
 type TechItem = {
   name: string;
@@ -34,6 +43,52 @@ const technologies: TechItem[] = [
 ];
 
 const Packs = () => {
+  const displayPacks = React.useMemo(
+    () => packs.filter((pack) => pack.slug !== "mantenimiento-pro"),
+    []
+  );
+  const packSlugs = React.useMemo(
+    () => displayPacks.map((pack) => pack.slug),
+    [displayPacks]
+  );
+  const [videoAssignments, setVideoAssignments] =
+    React.useState<PackVideoAssignments>({});
+
+  React.useEffect(() => {
+    if (packSlugs.length === 0) {
+      return;
+    }
+
+    const storedAssignments = loadAssignmentsFromStorage();
+
+    if (
+      storedAssignments &&
+      packSlugs.every((slug) => storedAssignments[slug])
+    ) {
+      setVideoAssignments(storedAssignments);
+      return;
+    }
+
+    const usedVideos = storedAssignments
+      ? Object.values(storedAssignments)
+      : [];
+    const missingSlugs = packSlugs.filter(
+      (slug) => !(storedAssignments && storedAssignments[slug])
+    );
+    const newAssignments = generatePackVideoAssignments(
+      missingSlugs,
+      usedVideos
+    );
+
+    const mergedAssignments: PackVideoAssignments = {
+      ...(storedAssignments ?? {}),
+      ...newAssignments,
+    };
+
+    setVideoAssignments(mergedAssignments);
+    saveAssignmentsToStorage(mergedAssignments);
+  }, [packSlugs]);
+
   const marqueeItems = React.useMemo(() => [...technologies, ...technologies], []);
   const marqueeStyle = React.useMemo(
     () =>
@@ -76,10 +131,12 @@ const Packs = () => {
       </p>
 
       <div className="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-        {packs
-          .filter((pack) => pack.slug !== "mantenimiento-pro")
-          .map((pack) => (
-          <PackCard key={pack.id} pack={pack} />
+        {displayPacks.map((pack) => (
+          <PackCard
+            key={pack.id}
+            pack={pack}
+            videoSrc={videoAssignments[pack.slug]}
+          />
         ))}
       </div>
 
@@ -109,9 +166,10 @@ interface PackProps {
     slug: string;
     previewVideo?: string;
   };
+  videoSrc?: string;
 }
 
-const PackCard = ({ pack }: PackProps) => {
+const PackCard = ({ pack, videoSrc }: PackProps) => {
   const [hovered, setHovered] = React.useState(false);
 
   const getColorClasses = (color: string) => {
@@ -136,7 +194,8 @@ const PackCard = ({ pack }: PackProps) => {
   };
 
   const colorConfig = getColorClasses(pack.color);
-  const videoSrc = pack.previewVideo ?? "/firstsoft.mp4";
+  const resolvedVideoSrc =
+    videoSrc ?? pack.previewVideo ?? DEFAULT_PACK_VIDEO;
 
   return (
     <Link href={`/packs/${pack.slug}`}>
@@ -155,7 +214,7 @@ const PackCard = ({ pack }: PackProps) => {
         <div className="absolute inset-0">
           <video
             className="h-full w-full object-cover"
-            src={videoSrc}
+            src={resolvedVideoSrc}
             autoPlay
             loop
             muted
