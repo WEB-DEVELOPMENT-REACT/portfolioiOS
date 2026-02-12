@@ -136,7 +136,7 @@ const PrivacyPolicy = () => {
               <li><strong>Revocación del consentimiento:</strong> Retirar su consentimiento en cualquier momento</li>
             </ul>
             <p className="mt-4">
-              Para ejercer estos derechos, contáctenos a través de: <a href="mailto:desarrollador@duverxmobiledev.es" className="text-purple hover:underline">desarrollador@duverxmobiledev</a>
+              Para ejercer estos derechos, contáctenos a través de: <a href="mailto:desarrollador@elduverx.com" className="text-purple hover:underline">desarrollador@elduverx.com</a>
             </p>
           </section>
 
@@ -181,7 +181,7 @@ const PrivacyPolicy = () => {
               puede contactarnos a través de:
             </p>
             <ul className="space-y-2">
-              <li><strong>Email:</strong> <a href="mailto:desarrollador@duverxmobiledev.es" className="text-purple hover:underline">desarrollador@duverxmobiledev.es</a></li>
+              <li><strong>Email:</strong> <a href="mailto:desarrollador@elduverx.com" className="text-purple hover:underline">desarrollador@elduverx.com</a></li>
               <li><strong>Sitio web:</strong> <a href="https://elduverx.com" className="text-purple hover:underline">elduverx.com</a></li>
             </ul>
           </section>

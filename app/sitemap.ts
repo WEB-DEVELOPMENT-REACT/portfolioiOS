@@ -12,6 +12,7 @@ const staticRoutes: Array<{ path: string; priority: number }> = [
   { path: "/stack", priority: 0.7 },
   { path: "/experience", priority: 0.7 },
   { path: "/contact", priority: 0.6 },
+  { path: "/privacy", priority: 0.5 },
   { path: "/privacy-policy", priority: 0.3 },
 ];
 

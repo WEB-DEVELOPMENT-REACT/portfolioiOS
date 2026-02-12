@@ -37,7 +37,7 @@ const Footer = () => {
             Copyright © 2024 Duver Muriel
           </p>
           <span className="hidden md:inline text-white-200">•</span>
-          <Link href="/privacy-policy" className="md:text-base text-sm md:font-normal font-light text-white-200 hover:text-purple transition-colors">
+          <Link href="/privacy" className="md:text-base text-sm md:font-normal font-light text-white-200 hover:text-purple transition-colors">
             Políticas de Privacidad
           </Link>
         </div>
