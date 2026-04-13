@@ -3,6 +3,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { packs } from "@/data";
@@ -43,6 +44,8 @@ const technologies: TechItem[] = [
 ];
 
 const Packs = () => {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const displayPacks = React.useMemo(
     () => packs.filter((pack) => pack.slug !== "mantenimiento-pro"),
     []
@@ -123,7 +126,7 @@ const Packs = () => {
         </div>
       </div>
 
-      <h1 className="heading">
+      <h1 className="heading text-center text-4xl sm:text-5xl md:text-6xl">
         Servicios <span className="text-purple">Profesionales</span>
       </h1>
       <p className="text-center text-white-200 mt-4 mb-8 text-lg max-w-3xl mx-auto">
@@ -136,13 +139,14 @@ const Packs = () => {
             key={pack.id}
             pack={pack}
             videoSrc={videoAssignments[pack.slug]}
+            isHomePage={isHomePage}
           />
         ))}
       </div>
 
       {/* Pack Extra - Mantenimiento */}
       <div className="mt-16">
-        <MaintenanceCard />
+        <MaintenanceCard isHomePage={isHomePage} />
       </div>
     </section>
   );
@@ -167,9 +171,10 @@ interface PackProps {
     previewVideo?: string;
   };
   videoSrc?: string;
+  isHomePage: boolean;
 }
 
-const PackCard = ({ pack, videoSrc }: PackProps) => {
+const PackCard = ({ pack, videoSrc, isHomePage }: PackProps) => {
   const [hovered, setHovered] = React.useState(false);
 
   const getColorClasses = (color: string) => {
@@ -260,9 +265,11 @@ const PackCard = ({ pack, videoSrc }: PackProps) => {
                   order={pack.order}
                   title={pack.title}
                   subtitle={pack.subtitle}
+                  titleOnly={isHomePage}
                 />
 
-                <div className="w-full max-w-sm">
+                {!isHomePage && (
+                  <div className="w-full max-w-sm">
                   <div className="grid grid-cols-2 gap-3 text-left">
                     <div className="rounded-2xl border border-white/[0.08] bg-black/50 px-4 py-3">
                       <p className="text-[10px] uppercase tracking-[0.2em] text-white/60">Inversión</p>
@@ -274,6 +281,7 @@ const PackCard = ({ pack, videoSrc }: PackProps) => {
                     </div>
                   </div>
                 </div>
+                )}
               </motion.div>
             ) : (
               <motion.div
@@ -293,12 +301,14 @@ const PackCard = ({ pack, videoSrc }: PackProps) => {
                     <p className="text-xs text-white-200 leading-snug">{pack.subtitle}</p>
                   </div>
 
-                  <div className="text-[11px] text-white-200">
+                  {!isHomePage && (
+                    <div className="text-[11px] text-white-200">
                     <p className="text-base sm:text-lg font-semibold text-purple">{pack.price}</p>
                     <p>
                       Entrega: <span className="font-semibold text-white">{pack.deliveryTime}</span>
                     </p>
                   </div>
+                  )}
 
                   <div className="space-y-2">
                     <h3 className="text-sm font-semibold text-white">Incluye:</h3>
@@ -348,7 +358,7 @@ const PackCard = ({ pack, videoSrc }: PackProps) => {
   );
 };
 
-const MaintenanceCard = () => {
+const MaintenanceCard = ({ isHomePage }: { isHomePage: boolean }) => {
   const [hovered, setHovered] = React.useState(false);
   const maintenancePack = React.useMemo(
     () => packs.find((item) => item.slug === "mantenimiento-pro"),
@@ -408,8 +418,10 @@ const MaintenanceCard = () => {
                   order={maintenancePack.order}
                   title={maintenancePack.title}
                   subtitle={maintenancePack.subtitle}
+                  titleOnly={isHomePage}
                 />
-                <div className="w-full max-w-md">
+                {!isHomePage && (
+                  <div className="w-full max-w-md">
                   <div className="grid grid-cols-2 gap-3 text-left">
                     <div className="rounded-2xl border border-white/[0.08] bg-black/50 px-4 py-3">
                       <p className="text-[10px] uppercase tracking-[0.2em] text-white/60">Precio</p>
@@ -421,6 +433,7 @@ const MaintenanceCard = () => {
                     </div>
                   </div>
                 </div>
+                )}
               </motion.div>
             ) : (
               <motion.div
@@ -440,10 +453,12 @@ const MaintenanceCard = () => {
                     <p className="text-sm text-white-200">{maintenancePack.subtitle}</p>
                   </div>
 
-                  <div className="text-sm text-white-200">
-                    <p className="font-semibold text-purple">{maintenancePack.price}</p>
-                    <p>Plan mensual con soporte prioritario.</p>
-                  </div>
+                  {!isHomePage && (
+                    <div className="text-sm text-white-200">
+                      <p className="font-semibold text-purple">{maintenancePack.price}</p>
+                      <p>Plan mensual con soporte prioritario.</p>
+                    </div>
+                  )}
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -504,9 +519,18 @@ interface PackBadgeProps {
   order: string;
   title: string;
   subtitle: string;
+  titleOnly?: boolean;
 }
 
-const PackBadge = ({ order, title, subtitle }: PackBadgeProps) => {
+const PackBadge = ({ order, title, subtitle, titleOnly = false }: PackBadgeProps) => {
+  if (titleOnly) {
+    return (
+      <div className="w-full max-w-sm text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white">{title}</h2>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full max-w-sm">
       <div className="relative inline-flex w-full overflow-hidden rounded-2xl p-[1px]">
@@ -547,3 +571,4 @@ export const Icon = ({ className, ...rest }: any) => {
     </svg>
   );
 };
+
